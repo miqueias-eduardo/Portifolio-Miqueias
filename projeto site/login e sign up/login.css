@@ -1,0 +1,108 @@
+body{display:flex;
+  position:relative;
+  text-align:center;
+  justify-content: center;
+  align-items:center;
+  flex-wrap:wrap;
+  height:100vh;
+  padding:20px; 
+  background :linear-gradient(to right, rgba(21, 151, 184, 0.808),rgba(22, 207, 121, 0.5));
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+ /*estilizando o primeiro container e seus componentes*/
+.container_1{display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width:40%; min-height:100vh;
+    border:1px; 
+    border-radius:15px; 
+    border-top-right-radius:1px;
+    border-bottom-right-radius:1px;
+    background: rgba(59, 194, 104, 0.507);
+    box-shadow: 10px 10px 10px 2px black;
+    }
+
+.container_1 h1{
+    color:aliceblue;
+    font-size:42px;
+    word-wrap: break-word;
+    overflow-wrap:break-word;
+}
+
+.container_1 p{
+    font-size:20px;
+}
+
+/*estilizando o segundo container e seus elementos*/
+
+.container_2{display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width:60%; min-height:100vh;
+    border:1px ; border-radius:15px; 
+    border-top-left-radius:1px;
+    border-bottom-left-radius:1px ;
+    background: rgba(255, 255, 255, 0.904);
+    box-shadow: 10px 10px 10px 2px black;
+}
+
+input{
+    width:50%;
+    padding:20px;
+    margin:20px;
+    border:1px solid black;
+    border-radius:20px;
+}
+
+h2{
+    margin-bottom:7%;
+    font-size:45px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*estilizando o botão para os dois containers*/
+
+button{
+    width:50%;
+    margin-top:10%;
+    padding:10px;
+    cursor:pointer;
+    background-color:rgba(37, 163, 37, 0.527);
+    color:white;
+    font-size:18px;
+}
+
+button:hover{
+    background-color: rgb(16, 240, 16)
+}
+
+@media(max-width:360px){
+
+    body{
+   padding:0 auto;
+   height:auto;
+    }
+
+
+
+  .container_1{
+    min-width: 100%; height:120px;
+  }
+  
+    .container_1 h1{
+    font-size:16px;
+
+   }
+
+   .container_2{
+    min-width: 100%; height:120px;
+   }
+
+   h2{
+    font-size:16px ;
+   }
+
+}

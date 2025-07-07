@@ -1,0 +1,45 @@
+body{display: flex;
+    flex-direction: column;
+    text-align:center;
+  justify-content:center;
+  align-items:center;
+  background: linear-gradient(to right, rgba(48, 228, 12, 0.726), rgba(10, 20, 170, 0.979));
+  padding-top:10%;
+}
+
+.sign-container{display:flex;
+    flex-direction: column;
+    text-align:center;
+     box-shadow:30px 10px 30px 5px black;
+    max-width:30%; height:max-content;
+    border:1px solid black;
+    border-radius:30px;
+}
+
+input{width:70%; 
+    padding:10px;
+    margin:2%;
+    border:1px solid black;
+
+}
+
+button{
+    justify-content: center;
+    margin:5%;
+    padding:10px;
+    border-radius:5px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-color:rgba(7, 15, 128, 0.61);
+    color:aliceblue;}
+
+button:hover{
+    background-color:rgba(3, 250, 196, 0.644);
+}
+
+@media (max-width : 1080px){
+.sign-container{
+    max-width:60%;
+    
+    
+}
+}

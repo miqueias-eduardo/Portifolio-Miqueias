@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>🚀Portifolio | Miqueias</title>
+</head>
+<body>
+
+<nav class="barra">
+    
+    <a href="#about">sobre mim</a>
+    <a href="#formacao">formação educacional</a>
+    <a href="#pro_titulo">portifolio</a>
+    <a href="#contato">contato</a>
+</nav>
+ <!--parte do codigo sobre mim-->
+<div id="about">
+    
+    <span>Olá,tudo bem?</span>
+    <h2>Eu sou Miqueias!</h2>
+    <h4>Sou estudante de analise e desenvolvimento de sistemas<br>
+        E apaixonado por programação e pelo poder transformador da tecnologia.
+        <br>
+   Sou criativo, comunicativo, adaptativo e dedicado : acredito que disciplina 
+   e vontade de evoluir quebram qualquer barreira.</h4>
+   
+</div>
+
+<!--parte do codigo da formação educacional-->
+<div id="formacao">
+<p>Atualmente, estou me aprofundando em tecnologias fundamentais para o desenvolvimento web e
+     a automação de processos. Tenho conhecimento em <strong>HTML, CSS e JavaScript,</strong>
+      que me permitem criar interfaces dinâmicas, acessíveis e visualmente atrativas.
+      </p>
+<p>
+Também venho explorando o universo do <strong>Python </strong>, com foco em automações e manipulação de dados.
+ Utilizo bibliotecas como <strong>Pandas</strong> para análise 
+ e transformação de dados e <strong>Selenium</strong> para automação
+  de tarefas repetitivas e testes em aplicações web.</p>
+
+  <p>
+Estou sempre em evolução,
+ buscando aprender na prática, experimentar novas soluções e 
+  colocar a mão no código sempre que posso.
+ Acredito que a tecnologia é uma ferramenta poderosa para gerar impacto real 
+   — e estou construindo meu caminho com essa convicção.</p>
+</div>
+
+<!--parte do codigo dos projetos-->
+
+<h1 id="pro_titulo">Projetos</h1>
+
+<div id="slider">
+
+<div id="projetos">
+
+  <!--botao para mover as imagens-->
+
+<input type="radio"name="imagem"id="btn_1" checked>
+<input type="radio"name="imagem"id="btn_2" >
+<input type="radio" name="imagem"id="btn_3" >
+<input type="radio"name="imagem"id="btn_4" >
+
+<!--fim dos botoes para mover imagens-->
+
+<!--imagens do projeto-->
+<div class="img_projeto" >
+<!--primeira imagem-->
+
+<img src="projeto_1.png" alt="imagem de uma pagina de login com
+ nome, email, e senha.
+ Com uma cor azul e verde no fundo da pagina">
+
+</div>
+
+<div class="img_projeto">
+<!--segunda imagem-->
+
+<img src="projeto_2.png" alt="imagem de uma pagina de cadastro com
+ nome, email e senha com uma cor azul e verde no fundo da pagina">
+
+</div>
+
+<div class="img_projeto">
+<!--terceira imagem-->
+
+<img src="projeto_3.png" alt="imagem de uma pagina que
+ explica o que e linguagem de programação 
+ e fala sobre algumas delas. Tem uma cor de fundo azul clara e azul escuro, as duas cores bem discretas.">
+
+</div>
+
+<div class="img_projeto">
+<!--quarta imagem-->
+
+<img src="projeto_4.png">
+
+</div>
+
+<!--fim das imagens do projeto-->
+</div>
+
+<!--botoes de navegação-->
+
+<div class="navegacao-btn">
+ <label for="btn_1" class="btn"> </label>
+ <label for="btn_2" class="btn"> </label>
+ <label for="btn_3" class="btn"> </label>
+ <label for="btn_4" class="btn"> </label>
+</div>
+
+</div>
+
+<!--link do projeto apresentado em cada imagem-->
+<div id="text-img">
+  <p>link do projeto:</p>
+<a class="text" href="projeto site/login e sign up/login.html" target="_blank">pagina de login</a>
+<a class="text" href="projeto site/login e sign up/sign_up.html" target="_blank">pagina de cadastro</a>
+<a class="text" href="projeto site/index.html" target="_blank">pagina sobre linguagens de programação</a>
+<a class="text" href="https://github.com/Edu-dev0/sistema-livraria-terminal" target="_blank">Livraria Terminal — Feita com Python</a>
+
+</div>
+
+
+<!--parte do codigo para entra em contato-->
+
+<div id="contato">
+   
+   <ol>
+    <h3>Contato:</h3>
+    <li>
+      <a href=" https://wa.me/558194442388" target="_blank">whatsapp
+      <span class="valor">(81)9444-2388</span>
+    </a></li>
+    <li><a href="https://github.com/Edu-dev0" target="_blank">Github
+      <span class="valor">Edu-dev0</span>
+    </a></li>
+    <li><a href="mailto:miqueiaseduardo294@gmail.com" target="_blank"> email 
+      <span class="valor">miqueiaseduardo294@gmail.com</span>
+
+    </a></li>
+           
+   </ol>
+
+
+    <form action="mailto:miqueiaseduardo294@gmail.com" method="post" id="mens" enctype="text/plain">
+
+    <h2>Fale comigo!</h2>
+      
+      <input type="text" placeholder="nome" required id="nome" class="formulario">
+
+
+      <input type="email" placeholder="e-mail" required id="email" class="formulario">
+
+
+      <textarea name="mensagem" placeholder="mensagem" required id="mensagem" class="formulario"></textarea>
+      
+        
+      <input type="submit" value="Enviar">
+
+    <h2 id="mostrar_mens">mensagem enviada</h2>
+    </form>
+    </div>
+
+    
+<script src="index.js"></script>
+
+</body>
+</html>
